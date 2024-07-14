@@ -1,8 +1,17 @@
 readme.txt
 
+Scopul acestui proiect este de a utiliza toate cunoștințele despre Baze de date dobândite în cadrul cursului de Testare Software și de a le aplica în practică, folosind o baza de date fictiva.
+
+Aplicația testată:  Baza de date cabinet veterinar.
+
+Creare date.
+Cautare date specifice sau general.
+Cautare folosind functii invatate la curs.  (where, and , or, like etc)
+
+
 # Baza de date pentru cabinetul veterinar
 
-Acest fișier descrie pașii necesari pentru crearea și popularea unei baze de date pentru un cabinet veterinar. Baza de date conține trei tabele: Owners, Pets și Appointments.
+Mai jos se regasesc pașii necesari pentru crearea și popularea unei baze de date pentru un cabinet veterinar. Baza de date conține trei tabele: Owners, Pets și Appointments.
 
 # Tool Folosit : MYSQL Workbench 8.0 
 
