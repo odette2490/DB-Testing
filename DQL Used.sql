@@ -45,4 +45,28 @@ where b.PetName like 'M%' and b.Species = 'Pisica'
 order by PetName asc;
 
 
+SELECT 
+    a.FirstName,a.LastName,b.Species, 
+    COUNT(c.Reason) AS ReasonCount
+FROM owners a 
+JOIN pets b ON a.OwnerID = b.OwnerID
+JOIN appointments c ON a.OwnerID = c.OwnerID
+WHERE b.PetName LIKE '%U%' 
+AND b.Species = 'Caine'
+AND c.Reason LIKE 'Consult%'
+GROUP BY a.FirstName,a.LastName,b.Species
+ORDER BY a.Firstname ASC;
+
+
+SELECT a.FirstName, a.LastName, b.AppointmentDate
+FROM Owners a
+INNER JOIN Appointments b ON a.OwnerID = b.OwnerID
+WHERE a.OwnerID IN (
+    SELECT OwnerID
+    FROM Owners
+    WHERE PhoneNumber LIKE '073%'
+)
+ORDER BY a.FirstName ASC;
+
+
 
